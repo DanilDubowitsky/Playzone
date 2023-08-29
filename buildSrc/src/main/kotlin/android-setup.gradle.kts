@@ -1,0 +1,27 @@
+import gradle.kotlin.dsl.accessors._3e193dc106ba1d0967e5e7e50d780473.android
+import org.gradle.api.JavaVersion
+
+plugins {
+    id("com.android.library")
+}
+
+android {
+    compileSdk = 33
+
+    defaultConfig {
+        minSdk = 21
+        targetSdk = 33
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        named("main") {
+            manifest.srcFile("src/androidMain/AndroidManifest.xml")
+            res.srcDirs("src/androidMain/res", "src/commonMain/resources")
+        }
+    }
+}
