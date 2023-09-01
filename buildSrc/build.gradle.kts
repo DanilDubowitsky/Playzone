@@ -13,6 +13,7 @@ dependencies {
     implementation(Dependencies.Android.gradlePlugin)
     implementation(Dependencies.Kotlin.kotlinPlugin)
     implementation(Dependencies.Compose.gradlePlugin)
+    implementation(Dependencies.Kotlin.Serialization.gradlePlugin)
 }
 
 kotlin {
