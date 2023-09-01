@@ -1,4 +1,4 @@
-import gradle.kotlin.dsl.accessors._3e193dc106ba1d0967e5e7e50d780473.android
+
 import org.gradle.api.JavaVersion
 
 plugins {
