@@ -10,6 +10,7 @@ object Dependencies {
 
         object Serialization {
             const val gradlePlugin = "org.jetbrains.kotlin:kotlin-serialization:1.5.31"
+            const val serializationJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
             const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.3.1"
         }
 
@@ -25,14 +26,26 @@ object Dependencies {
     }
 
     object Ktor {
-        private const val version = "1.6.2"
+        private const val version = "2.1.0"
         const val core = "io.ktor:ktor-client-core:$version"
         const val json = "io.ktor:ktor-client-json:$version"
         const val ios = "io.ktor:ktor-client-ios:$version"
         const val serialization = "io.ktor:ktor-client-serialization:$version"
+        const val negotation = "io.ktor:ktor-client-content-negotiation:$version"
         const val logging = "io.ktor:ktor-client-logging:$version"
         const val android = "io.ktor:ktor-client-android:$version"
         const val okhttp = "io.ktor:ktor-client-okhttp:$version"
+        const val serialization_json = "io.ktor:ktor-serialization-kotlinx-json:$version"
+    }
+
+    object SqlDelight {
+        private const val version = "1.5.3"
+
+        const val gradlePlugin = "com.squareup.sqldelight:gradle-plugin:$version"
+        const val core = "com.squareup.sqldelight:runtime:$version"
+        const val android = "com.squareup.sqldelight:android-driver:$version"
+        const val desktop = "com.squareup.sqldelight:sqlite-driver:$version"
+        const val ios = "com.squareup.sqldelight:native-driver:$version"
     }
 
     object Android {

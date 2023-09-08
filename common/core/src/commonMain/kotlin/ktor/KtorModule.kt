@@ -1,16 +1,18 @@
 package ktor
 
 import io.ktor.client.HttpClient
-import io.ktor.client.features.HttpTimeout
-import io.ktor.client.features.json.JsonFeature
-import io.ktor.client.features.json.serializer.KotlinxSerializer
-import io.ktor.client.features.logging.LogLevel
-import io.ktor.client.features.logging.Logger
-import io.ktor.client.features.logging.Logging
-import io.ktor.client.features.logging.SIMPLE
+import io.ktor.client.plugins.HttpTimeout
+import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.plugins.defaultRequest
+import io.ktor.client.plugins.logging.LogLevel
+import io.ktor.client.plugins.logging.Logger
+import io.ktor.client.plugins.logging.Logging
+import io.ktor.client.plugins.logging.SIMPLE
+import io.ktor.client.request.header
+import io.ktor.http.URLProtocol
+import io.ktor.serialization.kotlinx.json.json
 import org.kodein.di.DI
 import org.kodein.di.bind
-import org.kodein.di.instance
 import org.kodein.di.singleton
 
 internal val ktorModule = DI.Module("ktorModule") {
@@ -21,13 +23,21 @@ internal val ktorModule = DI.Module("ktorModule") {
                 level = LogLevel.ALL
             }
 
-            install(JsonFeature) {
-                serializer = KotlinxSerializer(json = instance())
+            install(ContentNegotiation) {
+                json()
             }
 
             install(HttpTimeout) {
                 connectTimeoutMillis = 15000
                 requestTimeoutMillis = 30000
+            }
+
+            defaultRequest {
+                url {
+                    protocol = URLProtocol.HTTP
+                    host = "192.168.15.242:8080"
+                }
+                header("Content-Type", "application/json; charset=utf-8")
             }
         }
     }
