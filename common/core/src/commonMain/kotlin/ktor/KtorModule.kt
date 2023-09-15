@@ -11,6 +11,7 @@ import io.ktor.client.plugins.logging.SIMPLE
 import io.ktor.client.request.header
 import io.ktor.http.URLProtocol
 import io.ktor.serialization.kotlinx.json.json
+import kotlinx.serialization.json.Json
 import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.singleton
@@ -24,7 +25,11 @@ internal val ktorModule = DI.Module("ktorModule") {
             }
 
             install(ContentNegotiation) {
-                json()
+                json(Json {
+                    isLenient = true
+                    ignoreUnknownKeys = true
+                    prettyPrint = true
+                })
             }
 
             install(HttpTimeout) {

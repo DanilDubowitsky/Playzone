@@ -10,6 +10,8 @@ import io.ktor.http.URLProtocol
 import io.ktor.http.path
 import ktor.models.KtorSearchGame
 import ktor.models.KtorSearchRequest
+import ktor.models.toModel
+import ktor.models.toModels
 import models.Game
 
 class KtorGamesDataSource(
@@ -29,8 +31,17 @@ class KtorGamesDataSource(
         }.body()
     }
 
-    suspend fun searchGame(query: String): Game {
-        return Game("", "Dota 2")
+    suspend fun searchGame(query: String): List<KtorSearchGame> {
+        return httpClient.post {
+            header(
+                "Bearer-Authorization",
+                "2bac6ef1-ca6d-42ca-96f3-923c68e88eca"
+            )
+            url {
+                path("games/search")
+                setBody(KtorSearchRequest(searchQuery = query))
+            }
+        }.body()
     }
 
 }

@@ -14,3 +14,5 @@ data class KtorSearchGame(
 )
 
 fun KtorSearchGame.toModel() = Game(id = gameId, title = title)
+
+fun List<KtorSearchGame>.toModels() = map(KtorSearchGame::toModel)

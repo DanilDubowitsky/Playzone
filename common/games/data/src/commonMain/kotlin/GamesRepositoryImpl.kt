@@ -1,6 +1,7 @@
 import ktor.KtorGamesDataSource
 import ktor.models.KtorSearchGame
 import ktor.models.toModel
+import ktor.models.toModels
 import models.Game
 import sqldelight.SqlDelightGamesDataSource
 
@@ -13,7 +14,7 @@ class GamesRepositoryImpl(
         return remoteDataSource.fetchAllGames().map(KtorSearchGame::toModel)
     }
 
-    override suspend fun searchGame(query: String): Game {
-        return remoteDataSource.searchGame(query)
+    override suspend fun searchGame(query: String): List<Game> {
+        return remoteDataSource.searchGame(query).toModels()
     }
 }

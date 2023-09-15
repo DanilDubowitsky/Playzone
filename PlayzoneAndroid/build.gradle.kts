@@ -14,6 +14,14 @@ android {
         versionName = "1.0"
     }
 
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.2.1"
+    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -34,6 +42,7 @@ dependencies {
     implementation(project(":common:core"))
     implementation(project(":common:games:api"))
     implementation(project(":common:umbrella-compose"))
+
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
