@@ -5,7 +5,7 @@ object Dependencies {
     }
 
     object Kotlin {
-        private const val version = "1.6.10"
+        private const val version = "1.6.0"
         const val kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
 
         object Serialization {
@@ -50,6 +50,7 @@ object Dependencies {
 
     object Android {
         const val gradlePlugin = "com.android.tools.build:gradle:7.2.2"
+        const val composeActivty = "androidx.activity:activity-compose:1.7.2"
 
         object Compose {
             private const val version = "1.2.1"

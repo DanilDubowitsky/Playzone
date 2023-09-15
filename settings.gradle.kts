@@ -10,6 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        jcenter()
+        maven(url = "https://jitpack.io")
     }
 }
 
@@ -29,7 +31,7 @@ include(":common:games:presentation")
 include(":common:games:data")
 include(":common:games:compose")
 include(":common:core")
-include(":common:core-compose")
 include(":common:core-utils")
+include(":common:core-compose")
 include(":common:umbrella-ios")
 include(":common:umbrella-compose")
