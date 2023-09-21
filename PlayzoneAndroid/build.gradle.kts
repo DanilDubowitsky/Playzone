@@ -20,7 +20,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.2.1"
+        kotlinCompilerExtensionVersion = "1.2.0"
     }
 
     buildTypes {
@@ -43,6 +43,11 @@ dependencies {
     implementation(project(":common:core"))
     implementation(project(":common:games:api"))
     implementation(project(":common:umbrella-compose"))
+
+    implementation(Dependencies.Android.Compose.ui)
+    implementation(Dependencies.Android.Compose.material)
+    implementation(Dependencies.Android.Compose.icons)
+    implementation(Dependencies.Android.Compose.tooling)
 
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

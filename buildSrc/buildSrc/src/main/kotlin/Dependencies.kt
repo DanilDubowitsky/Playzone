@@ -5,7 +5,7 @@ object Dependencies {
     }
 
     object Kotlin {
-        private const val version = "1.6.0"
+        private const val version = "1.7.10"
         const val kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
 
         object Serialization {
@@ -15,13 +15,13 @@ object Dependencies {
         }
 
         object Coroutines {
-            private const val version = "1.6.0"
+            private const val version = "1.6.4"
             const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
         }
     }
 
     object Compose {
-        private const val version = "1.1.1"
+        private const val version = "1.2.0-beta01"
         const val gradlePlugin = "org.jetbrains.compose:compose-gradle-plugin:$version"
     }
 
@@ -50,10 +50,10 @@ object Dependencies {
 
     object Android {
         const val gradlePlugin = "com.android.tools.build:gradle:7.2.2"
-        const val composeActivty = "androidx.activity:activity-compose:1.7.2"
+        const val composeActivty = "androidx.activity:activity-compose:1.5.1"
 
         object Compose {
-            private const val version = "1.2.1"
+            private const val version = "1.2.0"
             const val ui ="androidx.compose.ui:ui:$version"
             const val material = "androidx.compose.material:material:$version"
             const val tooling = "androidx.compose.ui:ui-tooling:$version"
@@ -63,7 +63,7 @@ object Dependencies {
 
     object Other {
         object ViewModel {
-            private const val version = "0.14"
+            private const val version = "0.7.1"
 
             const val core = "com.adeo:kviewmodel:$version"
             const val compose = "com.adeo:kviewmodel-compose:$version"
@@ -71,7 +71,7 @@ object Dependencies {
         }
 
         object Navigation {
-            private const val version = "1.3.20"
+            private const val version = "1.0.0-beta15"
 
             const val core = "io.github.alexgladkov:odyssey-core:$version"
             const val compose = "io.github.alexgladkov:odyssey-compose:$version"

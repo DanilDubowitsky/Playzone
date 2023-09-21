@@ -27,7 +27,7 @@ kotlin {
 
         androidMain {
             dependencies {
-                implementation(":common:core-compose")
+                implementation(project(":common:core-compose"))
                 implementation(Dependencies.Android.composeActivty)
             }
         }
