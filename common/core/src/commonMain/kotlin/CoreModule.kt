@@ -1,3 +1,4 @@
+
 import database.databaseModule
 import json.serializationModule
 import ktor.ktorModule
@@ -7,6 +8,6 @@ val coreModule = DI.Module("coreModule") {
     importAll(
         serializationModule,
         ktorModule,
-        databaseModule
+        //databaseModule
     )
 }
