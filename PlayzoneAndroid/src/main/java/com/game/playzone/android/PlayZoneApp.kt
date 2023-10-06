@@ -1,6 +1,6 @@
 package com.game.playzone.android
 
-import PlatformDataSDK
+import PlatformSDK
 import android.app.Application
 import platform.PlatformConfiguration
 
@@ -14,4 +14,4 @@ class PlayZoneApp : Application() {
 }
 
 fun PlayZoneApp.initPlatformSDK() =
-    PlatformDataSDK.init(configuration = PlatformConfiguration(context = applicationContext))
+    PlatformSDK.init(configuration = PlatformConfiguration(context = applicationContext))

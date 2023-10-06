@@ -10,6 +10,7 @@ kotlin {
                 implementation(project(":common:core"))
                 implementation(project(":common:core-compose"))
                 implementation(project(":common:core-utils"))
+                implementation(project(":common:umbrella-core"))
 
                 implementation(project(":common:games:data"))
                 implementation(project(":common:auth:compose"))

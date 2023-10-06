@@ -5,7 +5,7 @@ import org.kodein.di.direct
 import org.kodein.di.singleton
 import platform.PlatformConfiguration
 
-object PlatformDataSDK {
+object PlatformSDK {
 
     fun init(
         configuration: PlatformConfiguration
@@ -17,13 +17,15 @@ object PlatformDataSDK {
             }
         )
 
-        Inject.createDependencies(DI {
-            importAll(
-                coreModule,
-                gamesModule,
-                umbrellaModule,
-                authModule
-            )
-        }.direct)
+        Inject.createDependencies(
+            DI {
+                importAll(
+                    umbrellaModule,
+                    coreModule,
+                    gamesModule,
+                    authModule
+                )
+            }.direct
+        )
     }
 }

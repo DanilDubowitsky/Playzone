@@ -40,7 +40,7 @@ internal val ktorModule = DI.Module("ktorModule") {
             defaultRequest {
                 url {
                     protocol = URLProtocol.HTTP
-                    host = "192.168.15.242:8080"
+                    host = "192.168.15.240:8080"
                 }
                 header("Content-Type", "application/json; charset=utf-8")
             }

@@ -12,6 +12,9 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		4AB56801D9B807F73E1DE06F /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4857EF73C6667A2DFFE6F /* Pods_iosApp.framework */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		C988B3C32ACFD6AB00FF2672 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B3C22ACFD6AB00FF2672 /* LoginView.swift */; };
+		C988B3C52ACFDF5E00FF2672 /* Color + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B3C42ACFDF5E00FF2672 /* Color + Custom.swift */; };
+		C988B3C72ACFE28900FF2672 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B3C62ACFE28900FF2672 /* CommonTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5158C774ED7C353EA82825A /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8595C49980529214EDAD514 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C988B3C22ACFD6AB00FF2672 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C988B3C42ACFDF5E00FF2672 /* Color + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Custom.swift"; sourceTree = "<group>"; };
+		C988B3C62ACFE28900FF2672 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 		974E458428F1710E00D2E524 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C988B3C42ACFDF5E00FF2672 /* Color + Custom.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -97,6 +104,7 @@
 		974E458728F1733100D2E524 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C988B3C62ACFE28900FF2672 /* CommonTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,8 +112,17 @@
 		97FBE6A228F16D6300EA6A9C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C988B3C12ACFD65600FF2672 /* Login */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		C988B3C12ACFD65600FF2672 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C988B3C22ACFD6AB00FF2672 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		FE95650239BEA99803C0B9F6 /* Pods */ = {
@@ -213,7 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C988B3C52ACFDF5E00FF2672 /* Color + Custom.swift in Sources */,
+				C988B3C32ACFD6AB00FF2672 /* LoginView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				C988B3C72ACFE28900FF2672 /* CommonTextField.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

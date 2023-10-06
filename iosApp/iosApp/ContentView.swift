@@ -1,13 +1,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Button {
-            
-        } label: {
-            Text("Click ME")
-        }
-
+       LoginView()
+            .background(Color.backgroundPrimary)
     }
 }
 
