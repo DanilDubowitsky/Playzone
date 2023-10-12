@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  iosApp
-//
-//  Created by hackline on 6/10/2023.
-//  Copyright © 2023 orgName. All rights reserved.
-//
 
 import SwiftUI
 import SharedSDK
@@ -33,16 +26,66 @@ struct LoginView: View {
                 CommonTextField(hint: "Login", enabled: true, isSecure: false) { newValue in
                     loginViewModel.obtainEvent(viewEvent: .EmailChanged(value: newValue))
                 }
+                
+                Spacer().frame(height: 24)
+                CommonTextField(hint: "Password", enabled: true, isSecure: false) { newValue in
+                    loginViewModel.obtainEvent(viewEvent: .PasswordChanged(value: newValue))
+                }
+                
+                LoginActionView(onForgotClick: {
+                    loginViewModel.obtainEvent(viewEvent: .ForgotClick())
+                }, onSubmitClick: {
+                    loginViewModel.obtainEvent(viewEvent: .LoginClick())
+                })
+
+                 
             }
             
             HStack {
+                Text("Don't have account?")
+                    .foregroundColor(.textPrimary)
+                    .opacity(0.5)
                 
+                Text("Create one")
+                    .foregroundColor(.tintColor)
+                    .fontWeight(.bold)
+                    .onTapGesture {
+                        loginViewModel.obtainEvent(viewEvent: .RegistrationClick())
+                    }
             }
         }
     }
 }
 
-#Preview {
-    LoginView()
-        .background(Color.backgroundPrimary)
+struct LoginActionView: View {
+    
+    let onForgotClick: () -> Void
+    let onSubmitClick: () -> Void
+    
+    var body: some View {
+        VStack {
+            Spacer().frame(height: 30)
+            HStack {
+                Spacer()
+                Text("Forgot Password")
+                    .foregroundColor(.tintColor)
+                    .onTapGesture {
+                        onForgotClick()
+                    }
+                
+                Spacer().frame(width: 30)
+            }
+            Spacer().frame(height: 30)
+            ActionButton(title: "Login Now", enabled: true) {
+                onSubmitClick()
+            }.frame(height: 56)
+        }
+    }
+}
+
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+            .background(Color.backgroundPrimary)
+    }
 }

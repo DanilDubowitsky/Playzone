@@ -24,7 +24,7 @@ struct CommonTextField: View {
     }
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .center) {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(.backgroundSecondary)
             
