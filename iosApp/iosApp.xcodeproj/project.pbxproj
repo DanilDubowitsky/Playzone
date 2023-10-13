@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,16 @@
 		4AB56801D9B807F73E1DE06F /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4857EF73C6667A2DFFE6F /* Pods_iosApp.framework */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		C93E28F92AD7F8F9007BC256 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E28F82AD7F8F9007BC256 /* ActionButton.swift */; };
-		C93E28FB2AD803DC007BC256 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E28FA2AD803DC007BC256 /* Storyboard.storyboard */; };
+		C95E29CE2AD9322E0003F7FC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E29CD2AD9322E0003F7FC /* LoginScreen.swift */; };
+		C95E29D02AD940790003F7FC /* Flow + Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E29CF2AD940790003F7FC /* Flow + Publisher.swift */; };
+		C95E29D22AD9449A0003F7FC /* Viewmodel + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E29D12AD9449A0003F7FC /* Viewmodel + View.swift */; };
+		C95E29D52AD9535B0003F7FC /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E29D42AD9535B0003F7FC /* RegistrationScreen.swift */; };
+		C95E29D82AD953F70003F7FC /* ForgotScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E29D72AD953F70003F7FC /* ForgotScreen.swift */; };
+		C95E29DB2AD958040003F7FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E29DA2AD958040003F7FC /* MainView.swift */; };
 		C988B3C32ACFD6AB00FF2672 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B3C22ACFD6AB00FF2672 /* LoginView.swift */; };
 		C988B3C52ACFDF5E00FF2672 /* Color + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B3C42ACFDF5E00FF2672 /* Color + Custom.swift */; };
 		C988B3C72ACFE28900FF2672 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B3C62ACFE28900FF2672 /* CommonTextField.swift */; };
+		C9A50A382AD9027000E2531B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A50A372AD9027000E2531B /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +36,16 @@
 		C5158C774ED7C353EA82825A /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8595C49980529214EDAD514 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C93E28F82AD7F8F9007BC256 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		C93E28FA2AD803DC007BC256 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C95E29CD2AD9322E0003F7FC /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginScreen.swift; path = "../../../../../playzone-mobile/iosApp/iosApp/Screens/Login/LoginScreen.swift"; sourceTree = "<group>"; };
+		C95E29CF2AD940790003F7FC /* Flow + Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flow + Publisher.swift"; sourceTree = "<group>"; };
+		C95E29D12AD9449A0003F7FC /* Viewmodel + View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Viewmodel + View.swift"; sourceTree = "<group>"; };
+		C95E29D42AD9535B0003F7FC /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
+		C95E29D72AD953F70003F7FC /* ForgotScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotScreen.swift; sourceTree = "<group>"; };
+		C95E29DA2AD958040003F7FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C988B3C22ACFD6AB00FF2672 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C988B3C42ACFDF5E00FF2672 /* Color + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Custom.swift"; sourceTree = "<group>"; };
 		C988B3C62ACFE28900FF2672 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
+		C9A50A372AD9027000E2531B /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +79,7 @@
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
-				C93E28FA2AD803DC007BC256 /* Storyboard.storyboard */,
+				C9A50A372AD9027000E2531B /* Storyboard.storyboard */,
 				7555FF7D242A565900829871 /* iosApp */,
 				7555FF7C242A565900829871 /* Products */,
 				FE95650239BEA99803C0B9F6 /* Pods */,
@@ -102,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				C988B3C42ACFDF5E00FF2672 /* Color + Custom.swift */,
+				C95E29CF2AD940790003F7FC /* Flow + Publisher.swift */,
+				C95E29D12AD9449A0003F7FC /* Viewmodel + View.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -118,14 +132,74 @@
 		97FBE6A228F16D6300EA6A9C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C95E29DF2AD958410003F7FC /* Videos */,
+				C95E29DE2AD9582D0003F7FC /* Tournaments */,
+				C95E29DD2AD958250003F7FC /* Search */,
+				C95E29DC2AD9581D0003F7FC /* Home */,
+				C95E29D92AD957ED0003F7FC /* Main */,
+				C95E29D62AD953E50003F7FC /* Forgot */,
+				C95E29D32AD953210003F7FC /* Registration */,
 				C988B3C12ACFD65600FF2672 /* Login */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		C95E29D32AD953210003F7FC /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C95E29D42AD9535B0003F7FC /* RegistrationScreen.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		C95E29D62AD953E50003F7FC /* Forgot */ = {
+			isa = PBXGroup;
+			children = (
+				C95E29D72AD953F70003F7FC /* ForgotScreen.swift */,
+			);
+			path = Forgot;
+			sourceTree = "<group>";
+		};
+		C95E29D92AD957ED0003F7FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C95E29DA2AD958040003F7FC /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C95E29DC2AD9581D0003F7FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C95E29DD2AD958250003F7FC /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C95E29DE2AD9582D0003F7FC /* Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tournaments;
+			sourceTree = "<group>";
+		};
+		C95E29DF2AD958410003F7FC /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		C988B3C12ACFD65600FF2672 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				C95E29CD2AD9322E0003F7FC /* LoginScreen.swift */,
 				C988B3C22ACFD6AB00FF2672 /* LoginView.swift */,
 			);
 			path = Login;
@@ -167,8 +241,9 @@
 		7555FF73242A565900829871 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = orgName;
 				TargetAttributes = {
 					7555FF7A242A565900829871 = {
@@ -201,7 +276,7 @@
 			files = (
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
-				C93E28FB2AD803DC007BC256 /* Storyboard.storyboard in Resources */,
+				C9A50A382AD9027000E2531B /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +313,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C988B3C52ACFDF5E00FF2672 /* Color + Custom.swift in Sources */,
+				C95E29DB2AD958040003F7FC /* MainView.swift in Sources */,
+				C95E29D22AD9449A0003F7FC /* Viewmodel + View.swift in Sources */,
+				C95E29D52AD9535B0003F7FC /* RegistrationScreen.swift in Sources */,
 				C988B3C32ACFD6AB00FF2672 /* LoginView.swift in Sources */,
+				C95E29D02AD940790003F7FC /* Flow + Publisher.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				C988B3C72ACFE28900FF2672 /* CommonTextField.swift in Sources */,
+				C95E29CE2AD9322E0003F7FC /* LoginScreen.swift in Sources */,
+				C95E29D82AD953F70003F7FC /* ForgotScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				C93E28F92AD7F8F9007BC256 /* ActionButton.swift in Sources */,
 			);
@@ -286,6 +367,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,6 +429,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -370,10 +453,12 @@
 			baseConfigurationReference = C8595C49980529214EDAD514 /* Pods-iosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,10 +476,12 @@
 			baseConfigurationReference = C5158C774ED7C353EA82825A /* Pods-iosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

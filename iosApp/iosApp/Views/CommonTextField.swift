@@ -24,7 +24,7 @@ struct CommonTextField: View {
     }
     
     var body: some View {
-        ZStack(alignment: .center) {
+        ZStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(.backgroundSecondary)
             
@@ -63,10 +63,4 @@ struct CommonTextField: View {
         .frame(height: 56)
         .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
     }
-}
-
-#Preview {
-    CommonTextField(hint: "Your Email", enabled: true, isSecure: true, onValueChanged: { newValue in
-        print(newValue)
-    })
 }
