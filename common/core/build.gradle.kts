@@ -19,6 +19,9 @@ kotlin {
                 implementation(Dependencies.Ktor.negotation)
                 implementation(Dependencies.Ktor.serialization_json)
 
+                implementation(Dependencies.Settings.core)
+                implementation(Dependencies.Settings.noargs)
+
                 api(Dependencies.Kodein.core)
 
                 api(Dependencies.SqlDelight.core)

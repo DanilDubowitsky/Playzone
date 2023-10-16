@@ -1,8 +1,8 @@
 package com.game.playzone.android
 
+import PlatformConfiguration
 import PlatformSDK
 import android.app.Application
-import platform.PlatformConfiguration
 
 class PlayZoneApp : Application() {
 

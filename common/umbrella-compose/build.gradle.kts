@@ -14,6 +14,7 @@ kotlin {
 
                 implementation(project(":common:games:data"))
                 implementation(project(":common:auth:compose"))
+                implementation(project(":common:main:compose"))
                 implementation(project(":common:auth:data"))
                 implementation(project(":common:tournaments:data"))
 

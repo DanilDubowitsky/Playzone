@@ -4,6 +4,20 @@ object Dependencies {
         const val core = "org.kodein.di:kodein-di:7.1.0"
     }
 
+    object Settings {
+        const val core = "com.russhwolf:multiplatform-settings:1.0.0-RC"
+        const val noargs = "com.russhwolf:multiplatform-settings-no-arg:1.0.0-RC"
+    }
+
+    object Image {
+
+        object Coil {
+            private const val version = "2.4.0"
+            const val coil = "io.coil-kt:coil:$version"
+            const val coilCompose = "io.coil-kt:coil-compose:$version"
+        }
+    }
+
     object Kotlin {
         private const val version = "1.7.10"
         const val kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"

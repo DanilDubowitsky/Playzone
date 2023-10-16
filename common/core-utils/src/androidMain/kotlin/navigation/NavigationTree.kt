@@ -7,7 +7,20 @@ object NavigationTree {
     }
 
     enum class Auth {
-        AuthFlow, Login, Register, Forgot
+        AuthFlow,
+        Login,
+        Register,
+        Forgot
+    }
+
+    enum class Main {
+        Dashboard,
+        Home,
+        Search,
+        Event,
+        Videos,
+        Profile,
+        Game
     }
 
 }
