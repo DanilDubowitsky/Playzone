@@ -4,6 +4,13 @@ plugins {
     id("com.android.library").apply(false)
     kotlin("android").apply(false)
     kotlin("multiplatform").apply(false)
+    id("com.google.devtools.ksp") version "1.8.21-1.0.11"
+}
+
+buildscript {
+    dependencies {
+        classpath(kotlin("gradle-plugin", version = "1.9.10"))
+    }
 }
 
 tasks.register("clean", Delete::class) {

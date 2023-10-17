@@ -1,17 +1,13 @@
 package com.game.playzone.android
 
-import PlatformConfiguration
-import PlatformSDK
 import android.app.Application
+import initKoin
 
 class PlayZoneApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        initPlatformSDK()
+        initKoin()
     }
 
 }
-
-fun PlayZoneApp.initPlatformSDK() =
-    PlatformSDK.init(configuration = PlatformConfiguration(context = applicationContext))

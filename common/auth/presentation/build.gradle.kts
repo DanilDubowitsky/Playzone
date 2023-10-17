@@ -12,6 +12,7 @@ kotlin {
                 api(project(":common:core"))
 
                 implementation(Dependencies.Other.ViewModel.core)
+                implementation(Dependencies.Koin.core)
             }
         }
     }

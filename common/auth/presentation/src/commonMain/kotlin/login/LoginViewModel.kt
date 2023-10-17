@@ -2,7 +2,6 @@ package login
 
 import AuthRepository
 import com.adeo.kviewmodel.BaseSharedViewModel
-import di.Inject
 import kotlinx.coroutines.launch
 import login.models.LoginAction
 import login.models.LoginEvent
@@ -12,7 +11,7 @@ class LoginViewModel : BaseSharedViewModel<LoginViewState, LoginAction, LoginEve
     initialState = LoginViewState()
 ) {
 
-    private val authRepository: AuthRepository = Inject.instance()
+    private val authRepository: AuthRepository
 
     init {
         checkUserLoggedIn()

@@ -1,7 +1,10 @@
 object Dependencies {
 
-    object Kodein {
-        const val core = "org.kodein.di:kodein-di:7.1.0"
+    object Koin {
+        private const val version = "3.2.2"
+        private const val kspVersion = "1.1.0"
+        const val core = "io.insert-koin:koin-core:$version"
+        const val annotations = "io.insert-koin:koin-annotations:$kspVersion"
     }
 
     object Settings {

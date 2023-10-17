@@ -22,7 +22,8 @@ kotlin {
                 implementation(Dependencies.Settings.core)
                 implementation(Dependencies.Settings.noargs)
 
-                api(Dependencies.Kodein.core)
+                api(Dependencies.Koin.core)
+                api(Dependencies.Koin.annotations)
 
                 api(Dependencies.SqlDelight.core)
             }

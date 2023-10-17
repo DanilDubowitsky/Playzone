@@ -1,13 +1,11 @@
 package settings
 
 import com.russhwolf.settings.Settings
-import org.kodein.di.DI
-import org.kodein.di.bind
-import org.kodein.di.singleton
+import org.koin.core.annotation.Module
+import org.koin.dsl.module
 
-internal val settingsModule = DI.Module("settingsModule") {
-    bind<Settings>() with singleton {
-        Settings()
-    }
+@Module
+class SettingsModule(){
+
 
 }

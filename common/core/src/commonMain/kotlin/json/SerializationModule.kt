@@ -1,12 +1,10 @@
 package json
 
 import kotlinx.serialization.json.Json
-import org.kodein.di.DI
-import org.kodein.di.bind
-import org.kodein.di.singleton
+import org.koin.dsl.module
 
-internal val serializationModule = DI.Module("serializationModule") {
-    bind<Json>() with singleton {
+internal val serializationModule = module {
+    single {
         Json {
             isLenient = true
             ignoreUnknownKeys = true
