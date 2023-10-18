@@ -1,12 +1,18 @@
 package navigation
 
 import SplashScreen
+import admin.navigation.adminFlow
 import androidx.compose.material.Text
 import androidx.compose.ui.graphics.Color
 import ru.alexgladkov.odyssey.compose.extensions.screen
 import ru.alexgladkov.odyssey.compose.navigation.RootComposeBuilder
 
-fun RootComposeBuilder.generateGraph() {
+enum class NavigationSource {
+    Desktop,
+    Android
+}
+
+fun RootComposeBuilder.generateGraph(source: NavigationSource) {
     screen(name = NavigationTree.Splash.SplashScreen.name) {
         SplashScreen()
     }
@@ -16,5 +22,9 @@ fun RootComposeBuilder.generateGraph() {
     }
 
     authFlow()
-    mainFlow()
+
+    when (source) {
+        NavigationSource.Desktop -> adminFlow()
+        NavigationSource.Android -> mainFlow()
+    }
 }

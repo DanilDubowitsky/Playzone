@@ -17,6 +17,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "Playzone"
 include(":PlayzoneAndroid")
+include(":desktop")
 include(":common:auth")
 include(":common:auth:api")
 include(":common:auth:presentation")

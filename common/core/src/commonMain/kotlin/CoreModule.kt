@@ -1,9 +1,8 @@
-
 import json.serializationModule
 import ktor.ktorModule
-import org.koin.core.annotation.Module
 import org.koin.dsl.module
-import settings.SettingsModule
+import settings.settingsModule
 
-@Module(includes = [SettingsModule::class])
-class CoreModule
+val coreModule = module {
+    includes(ktorModule, serializationModule, settingsModule)
+}

@@ -1,5 +1,6 @@
 package ktor
 
+import com.russhwolf.settings.Settings
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -16,6 +17,7 @@ import org.koin.dsl.module
 
 internal val ktorModule = module {
     single {
+        val userSettings = get<Settings>()
         HttpClient(HttpEngineFactory().createEngine()) {
             install(Logging) {
                 logger = Logger.SIMPLE
@@ -41,6 +43,10 @@ internal val ktorModule = module {
                     host = "192.168.15.240:8080"
                 }
                 header("Content-Type", "application/json; charset=utf-8")
+                header(
+                    "Bearer-Authorization",
+                    userSettings.getString("token", "")
+                )
             }
         }
     }

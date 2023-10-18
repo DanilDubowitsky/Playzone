@@ -67,3 +67,18 @@ class VideosTab : TabItem() {
         }
 
 }
+
+class GamesTab : TabItem() {
+
+    override val configuration: TabConfiguration
+        @Composable
+        get() {
+            return TabConfiguration(
+                title = "Games",
+                selectedColor = Theme.colors.primaryAction,
+                unselectedColor = Theme.colors.hintTextColor,
+                titleStyle = TextStyle(fontSize = 14.sp, fontWeight = FontWeight.Medium)
+            )
+        }
+
+}

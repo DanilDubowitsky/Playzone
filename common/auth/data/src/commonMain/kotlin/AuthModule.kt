@@ -7,7 +7,7 @@ val authModule = module {
         AuthRepositoryImpl(get(), get())
     }
 
-    factory<SettingsAuthDataSource> {
+    factory {
         SettingsAuthDataSource(get())
     }
 

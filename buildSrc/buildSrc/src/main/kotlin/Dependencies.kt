@@ -5,6 +5,7 @@ object Dependencies {
         private const val kspVersion = "1.1.0"
         const val core = "io.insert-koin:koin-core:$version"
         const val annotations = "io.insert-koin:koin-annotations:$kspVersion"
+        const val ksp = "io.insert-koin:koin-ksp-compiler:$kspVersion"
     }
 
     object Settings {

@@ -6,12 +6,14 @@ import kotlinx.coroutines.launch
 import login.models.LoginAction
 import login.models.LoginEvent
 import login.models.LoginViewState
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.inject
 
 class LoginViewModel : BaseSharedViewModel<LoginViewState, LoginAction, LoginEvent>(
     initialState = LoginViewState()
-) {
+), KoinComponent {
 
-    private val authRepository: AuthRepository
+    private val authRepository: AuthRepository by inject()
 
     init {
         checkUserLoggedIn()

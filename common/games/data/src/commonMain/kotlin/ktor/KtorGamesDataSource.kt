@@ -20,10 +20,6 @@ class KtorGamesDataSource(
 
     suspend fun fetchAllGames(): List<KtorSearchGame> {
         return httpClient.post {
-            header(
-                "Bearer-Authorization",
-                "2bac6ef1-ca6d-42ca-96f3-923c68e88eca"
-            )
             url {
                 path("games/search")
                 setBody(KtorSearchRequest(searchQuery = ""))
@@ -33,10 +29,6 @@ class KtorGamesDataSource(
 
     suspend fun searchGame(query: String): List<KtorSearchGame> {
         return httpClient.post {
-            header(
-                "Bearer-Authorization",
-                "2bac6ef1-ca6d-42ca-96f3-923c68e88eca"
-            )
             url {
                 path("games/search")
                 setBody(KtorSearchRequest(searchQuery = query))

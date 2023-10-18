@@ -11,10 +11,9 @@ class SettingsAuthDataSource(
         settings.putString(TOKEN_KEY, token)
     }
 
-    fun fetchToken(): String =
-        settings[TOKEN_KEY, ""]
+    fun fetchToken(): String = settings.getString(TOKEN_KEY, "")
 
-    private companion object {
+    companion object {
         const val TOKEN_KEY = "token"
     }
 

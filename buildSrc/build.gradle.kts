@@ -15,6 +15,8 @@ dependencies {
     implementation(Dependencies.Compose.gradlePlugin)
     implementation(Dependencies.Kotlin.Serialization.gradlePlugin)
     implementation(Dependencies.SqlDelight.gradlePlugin)
+    implementation(Dependencies.Koin.core)
+    implementation(Dependencies.Koin.annotations)
 }
 
 kotlin {
