@@ -3,7 +3,7 @@ import javax.swing.JFrame
 import javax.swing.SwingUtilities
 
 fun main() = SwingUtilities.invokeLater {
-    initKoin()
+    initKoin(PlatformConfiguration())
 
     JFrame().setupThemedNavigation()
 }

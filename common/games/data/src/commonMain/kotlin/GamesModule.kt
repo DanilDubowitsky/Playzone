@@ -8,7 +8,7 @@ val gamesModule = module {
     }
 
     factory {
-        SqlDelightGamesDataSource()
+        SqlDelightGamesDataSource(get())
     }
 
     single<GamesRepository> {

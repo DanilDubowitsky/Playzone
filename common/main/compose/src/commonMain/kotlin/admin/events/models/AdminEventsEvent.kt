@@ -1,4 +1,6 @@
 package admin.events.models
 
-class AdminEventsEvent {
+sealed class AdminEventsEvent {
+
+
 }

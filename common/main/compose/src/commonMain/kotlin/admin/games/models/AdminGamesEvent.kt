@@ -1,4 +1,6 @@
 package admin.games.models
 
-class AdminGamesEvent {
+sealed class AdminGamesEvent {
+
+    object AddGameClicked : AdminGamesEvent()
 }

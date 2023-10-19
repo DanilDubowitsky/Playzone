@@ -2,6 +2,7 @@ package setup
 
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.awt.ComposePanel
+import navigation.NavigationSource
 import navigation.NavigationTree
 import ru.alexgladkov.odyssey.compose.navigation.RootComposeBuilder
 import navigation.generateGraph
@@ -16,7 +17,7 @@ import javax.swing.WindowConstants
 
 fun JFrame.setupThemedNavigation() {
     val rootController = RootComposeBuilder().apply {
-         generateGraph()
+         generateGraph(NavigationSource.Desktop)
     }.build()
 
     defaultCloseOperation = WindowConstants.EXIT_ON_CLOSE

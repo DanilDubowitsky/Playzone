@@ -1,11 +1,9 @@
 package admin.games
 
 import GamesRepository
-import admin.events.models.AdminEventsAction
-import admin.events.models.AdminEventsEvent
-import admin.events.models.AdminGamesViewState
 import admin.games.models.AdminGamesAction
 import admin.games.models.AdminGamesEvent
+import admin.games.models.AdminGamesViewState
 import com.adeo.kviewmodel.BaseSharedViewModel
 import kotlinx.coroutines.launch
 import org.koin.core.component.KoinComponent
@@ -23,13 +21,17 @@ class AdminGamesViewModel :
     }
 
     override fun obtainEvent(viewEvent: AdminGamesEvent) {
-
+        when (viewEvent) {
+            AdminGamesEvent.AddGameClicked -> {
+                viewAction = AdminGamesAction.ShowAddGame
+            }
+        }
     }
 
     private fun fetchAllGames() {
         viewModelScope.launch {
             val games = gamesRepository.fetchAllGames()
-            viewState = viewState
+            viewState = viewState.copy(games = games)
         }
     }
 

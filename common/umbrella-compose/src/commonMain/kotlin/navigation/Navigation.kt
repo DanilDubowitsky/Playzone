@@ -1,6 +1,7 @@
 package navigation
 
 import SplashScreen
+import admin.creategame.CreateGameScreen
 import admin.navigation.adminFlow
 import androidx.compose.material.Text
 import androidx.compose.ui.graphics.Color
@@ -24,7 +25,13 @@ fun RootComposeBuilder.generateGraph(source: NavigationSource) {
     authFlow()
 
     when (source) {
-        NavigationSource.Desktop -> adminFlow()
+        NavigationSource.Desktop -> {
+            adminFlow()
+
+            screen(name = NavigationTree.Admin.CreateGame.name) {
+                CreateGameScreen()
+            }
+        }
         NavigationSource.Android -> mainFlow()
     }
 }

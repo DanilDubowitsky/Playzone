@@ -5,7 +5,7 @@ import SharedSDK
 struct iOSApp: App {
     
     init() {
-        HelperKt.doInitKoin()
+        HelperKt.doInitKoin(configuration: PlatformConfiguration())
     }
     
     var body: some Scene {
